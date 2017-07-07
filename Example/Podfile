@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RippleTransition_Example' do
+  pod 'RippleTransition', :path => '../'
+
+  target 'RippleTransition_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
