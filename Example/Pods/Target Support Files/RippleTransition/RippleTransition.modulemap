@@ -1,0 +1,6 @@
+framework module RippleTransition {
+  umbrella header "RippleTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}

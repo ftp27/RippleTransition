@@ -1,0 +1,16 @@
+PODS:
+  - RippleTransition (0.1.0)
+
+DEPENDENCIES:
+  - RippleTransition (from `../`)
+
+EXTERNAL SOURCES:
+  RippleTransition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RippleTransition: 1b5878aadb6b92f9629d81f6343eb519fece7336
+
+PODFILE CHECKSUM: 25b6d88a6f0389245011d0ac0c0a53c9c0b4460c
+
+COCOAPODS: 1.2.1

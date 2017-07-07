@@ -1,0 +1,22 @@
+{
+  "name": "RippleTransition",
+  "version": "0.1.0",
+  "summary": "A short description of RippleTransition.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ftp27/RippleTransition",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ftp27": "ftp27host@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ftp27/RippleTransition.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RippleTransition/Classes/**/*"
+}
