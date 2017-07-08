@@ -34,13 +34,16 @@ public class RipplePresentAnimationController: NSObject, UIViewControllerAnimate
         let frame = toVC.view.frame
         let center = sourcePoint ?? toVC.view.center
         
+        let maxRadius = sqrt(pow(max(center.x,  frame.width - center.x), 2) +
+                             pow(max(center.y, frame.height - center.y), 2))
+        
         let anim = CABasicAnimation(keyPath: "path")
         
         anim.fromValue = path(fromPoint: center,
                               withRadius: 1,
                               frame: frame)
         anim.toValue = path(fromPoint: center,
-                            withRadius: max(frame.width, frame.height),
+                            withRadius: maxRadius,
                             frame: frame)
         anim.duration = duration
         anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
@@ -55,7 +58,7 @@ public class RipplePresentAnimationController: NSObject, UIViewControllerAnimate
         }
     }
     
-    func path(fromPoint point: CGPoint, withRadius radius: CGFloat, frame: CGRect) -> CGPath {
+    func path(fromPoint point: CGPoint, withRadius radius:CGFloat, frame: CGRect) -> CGPath {
         let path = CGMutablePath()
         path.addEllipse(in: CGRect(origin: CGPoint(x: point.x - radius,
                                                    y: point.y - radius),
